@@ -1,0 +1,36 @@
+@use "../../foundation/variables";
+
+
+.p-cta-btn {
+    position: fixed;
+    background: variables.$color-green;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    bottom: 15px;
+    right: 15px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    @include variables.font-jp(1.2rem, 400, 1.8rem, variables.$color-white);
+
+    @include variables.media-tb {
+        width: 110px;
+        height: 110px;
+        @include variables.font-jp(1.8rem, 400, 2.7rem, variables.$color-white);
+    }
+
+    @include variables.media-pc {
+        width: 150px;
+        height: 150px;
+        @include variables.font-jp(2.2rem, 400, 3.3rem, variables.$color-white);
+    }
+
+}
+
+.p-cta-btn:hover {
+    transform: translateX(3px) translateY(3px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
