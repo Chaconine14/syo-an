@@ -1,0 +1,50 @@
+//***************************************
+//カラーパレット
+//***************************************
+
+$color-green: #727444;
+$color-darkbrown: #3C381E;
+$color-brown: #7C6445;
+$color-beige: #D2BD96;
+$color-cream: #FFEFD1;
+
+
+//***************************************
+//フォント設定
+//***************************************
+
+@mixin font-jp($size, $weight, $lh, $color) {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  color: $color;
+}
+
+@mixin font-en($size, $weight, $lh, $color) {
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  color: $color;
+}
+
+
+//***************************************
+//レスポンシブ　メディアクエリ設定
+//***************************************
+
+@mixin media-tb {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-pc {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
