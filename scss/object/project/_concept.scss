@@ -1,0 +1,75 @@
+@use "../../foundation/variables";
+
+.p-concept {
+    background-image: url(../../../images/concept-area_bg.jpg);
+    height: 100%;
+    padding: 20px;
+    background-size: cover;
+
+    @include variables.media-tb {
+        padding: 50px;
+        position: relative;
+    }
+
+    @include variables.media-pc {
+        padding: 80px;
+    }
+
+    img {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+
+        @include variables.media-tb {
+            padding-top: 0;
+            width: auto;
+            height: 400px;
+            margin: 0 0 0 auto;
+        }
+
+        @include variables.media-pc {
+            height: 655px;
+        }
+    }
+}
+
+.p-concept__text-area {
+    padding: 20px;
+    background-color: rgba(variables.$color-white, 0.8);
+    width: 100%;
+
+    @include variables.media-tb {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 50%;
+        padding: 50px 70px 50px 30px;
+    }
+
+}
+
+.p-concept__title {
+    @include variables.font-jp(1.6rem, 400, 2.2rem, variables.$color-darkbrown);
+    text-decoration: underline;
+    padding-bottom: 1.8rem;
+
+    @include variables.media-tb {
+        @include variables.font-jp(1.8rem, 400, 2.7rem, variables.$color-darkbrown);
+    }
+
+    @include variables.media-pc {
+        @include variables.font-jp(2.2rem, 400, 3.3rem, variables.$color-darkbrown);
+    }
+}
+
+.p-concept__text {
+    @include variables.font-jp(1.2rem, 400, 1.8rem, variables.$color-darkbrown);
+
+    @include variables.media-tb {
+        @include variables.font-jp(1.4rem, 400, 2.1rem, variables.$color-darkbrown);
+    }
+
+    @include variables.media-pc {
+        @include variables.font-jp(1.6rem, 400, 3.2rem, variables.$color-darkbrown);
+    }
+}

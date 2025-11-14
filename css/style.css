@@ -210,4 +210,121 @@ main {
     color: #3C381E;
   }
 }
+
+.p-concept {
+  background-image: url(../../../images/concept-area_bg.jpg);
+  height: 100%;
+  padding: 20px;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .p-concept {
+    padding: 50px;
+    position: relative;
+  }
+}
+@media (min-width: 1025px) {
+  .p-concept {
+    padding: 80px;
+  }
+}
+.p-concept img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .p-concept img {
+    padding-top: 0;
+    width: auto;
+    height: 400px;
+    margin: 0 0 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  .p-concept img {
+    height: 655px;
+  }
+}
+
+.p-concept__text-area {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .p-concept__text-area {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 50%;
+    padding: 50px 70px 50px 30px;
+  }
+}
+
+.p-concept__title {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #3C381E;
+  text-decoration: underline;
+  padding-bottom: 1.8rem;
+}
+@media (min-width: 768px) {
+  .p-concept__title {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #3C381E;
+  }
+}
+@media (min-width: 1025px) {
+  .p-concept__title {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    color: #3C381E;
+  }
+}
+
+.p-concept__text {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #3C381E;
+}
+@media (min-width: 768px) {
+  .p-concept__text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #3C381E;
+  }
+}
+@media (min-width: 1025px) {
+  .p-concept__text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #3C381E;
+  }
+}
 /*# sourceMappingURL=style.css.map */
