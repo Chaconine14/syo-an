@@ -1,0 +1,42 @@
+@use "../../foundation/variables";
+
+
+.p-lang-btn {
+    display: flex;
+    background-color: variables.$color-white;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 0.5px solid variables.$color-darkbrown;
+
+    @include variables.media-tb {
+        width: 90px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+    }
+
+    @include variables.media-pc {
+        width: 105px;
+        height: 45px;
+        top: 30px;
+        right: 30px;
+    }
+
+    span {
+        @include variables.font-jp(1.4rem, 400, 1.8rem, variables.$color-darkbrown);
+
+        @include variables.media-tb {
+            @include variables.font-jp(1.8rem, 400, 2.7rem, variables.$color-darkbrown);
+        }
+
+        @include variables.media-pc {
+            @include variables.font-jp(2.4rem, 400, 1.8rem, variables.$color-darkbrown);
+        }
+    }
+}

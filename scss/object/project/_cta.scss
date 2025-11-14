@@ -13,6 +13,7 @@
     place-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
+    z-index: 1000;
 
     @include variables.font-jp(1.2rem, 400, 1.8rem, variables.$color-white);
 

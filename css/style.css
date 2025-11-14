@@ -27,6 +27,7 @@ main {
   background-position: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 @media (min-width: 768px) {
   .l-main-visual {
@@ -47,7 +48,53 @@ main {
   font-size: 2.2rem;
   line-height: 3.3rem;
   color: #FFF;
-  text-align: end;
+  position: absolute;
+  right: 15px;
+  top: 100px;
+}
+@media (min-width: 768px) {
+  .p-catch {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 4.2rem;
+    color: #FFF;
+    left: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  .p-catch {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+    color: #FFF;
+    top: 25%;
+  }
+}
+.p-catch__logo {
+  position: absolute;
+  top: 175px;
+  right: 25px;
+  width: 80px;
+}
+@media (min-width: 768px) {
+  .p-catch__logo {
+    top: 220px;
+    left: 12%;
+    width: 90px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-catch__logo {
+    left: 10%;
+    top: 44%;
+    width: 166px;
+  }
 }
 
 .p-cta-btn {
@@ -62,6 +109,7 @@ main {
   place-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
+  z-index: 1000;
   font-family: "Zen Old Mincho", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -100,5 +148,66 @@ main {
 .p-cta-btn:hover {
   transform: translateX(3px) translateY(3px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.p-lang-btn {
+  display: flex;
+  background-color: #FFF;
+  width: 70px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 0.5px solid #3C381E;
+}
+@media (min-width: 768px) {
+  .p-lang-btn {
+    width: 90px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+  }
+}
+@media (min-width: 1025px) {
+  .p-lang-btn {
+    width: 105px;
+    height: 45px;
+    top: 30px;
+    right: 30px;
+  }
+}
+.p-lang-btn span {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #3C381E;
+}
+@media (min-width: 768px) {
+  .p-lang-btn span {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #3C381E;
+  }
+}
+@media (min-width: 1025px) {
+  .p-lang-btn span {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.8rem;
+    color: #3C381E;
+  }
 }
 /*# sourceMappingURL=style.css.map */

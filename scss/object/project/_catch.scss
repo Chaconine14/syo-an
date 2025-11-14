@@ -2,5 +2,37 @@
 
 .p-catch {
     @include variables.font-jp(2.2rem, 400, 3.3rem, variables.$color-white);
-    text-align: end;
+    position: absolute;
+    right: 15px;
+    top: 100px;
+
+    @include variables.media-tb {
+        @include variables.font-jp(2.8rem, 400, 4.2rem, variables.$color-white);
+        left: 10%;
+    }
+
+    @include variables.media-pc {
+        @include variables.font-jp(4.0rem, 700, 6.0rem, variables.$color-white);
+        top: 25%;
+    }
+
+
+    &__logo {
+        position: absolute;
+        top: 175px;
+        right: 25px;
+        width: 80px;
+
+        @include variables.media-tb {
+            top: 220px;
+            left: 12%;
+            width: 90px;
+        }
+
+        @include variables.media-pc {
+            left: 10%;
+            top: 44%;
+            width: 166px;
+        }
+    }
 }
