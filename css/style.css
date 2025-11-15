@@ -527,6 +527,16 @@ main {
   width: 100%;
 }
 
+.p-onsen_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-onsen_item {
+  width: 100%;
+  height: 100%;
+}
+
 .u-margin-bottom {
   margin-bottom: 30px;
 }
