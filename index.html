@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&family=Zen+Old+Mincho:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <title>Condominium | 松庵 Syo-an</title>
 </head>
 
@@ -73,10 +74,148 @@
             </picture>
         </section>
 
+
         <!-- 客室エリア -->
-        <section>
-            <h2>客室</h2>
-            <!-- 授業のスライドみたらここに画像とキャプション入れてく！！！！！！！！ -->
+        <section class="p-room">
+            <h2 class="c-title">客室</h2>
+
+            <!-- スライダー① -->
+            <div class="p-swiper-wrap u-margin-bottom">
+                <div class="swiper slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/room1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/room2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/room3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/room4.jpg" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 前後の矢印 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- キャプション -->
+                <p class="p-swiper__text">家族それぞれの時間を尊重する、3つの寝室。<br>洋室2・和室1（最大6名まで）</p>
+
+                <!-- サムネイル -->
+                <div class="swiper slider-thumbnail">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/room1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/room2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/room3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/room4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- スライダー② -->
+            <div class="p-swiper-wrap u-margin-bottom">
+                <div class="swiper slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/facility1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/facility2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/facility3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/facility4.jpg" alt="" />
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 前後の矢印 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- キャプション -->
+                <p class="p-swiper__text">自宅のように過ごせるプライベート空間<br>キッチン・バスルーム・Wi-Fi完備</p>
+
+                <!-- サムネイル -->
+                <div class="swiper slider-thumbnail">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/facility1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/facility2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/facility3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/facility4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- スライダー③ -->
+            <div class="p-swiper-wrap u-margin-bottom">
+                <div class="swiper slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/terrace1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/terrace2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/terrace3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/terrace4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 前後の矢印 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- キャプション -->
+                <p class="p-swiper__text">テラスで過ごす贅沢なひととき<br>野沢の風を感じる、もうひとつのリビングです</p>
+
+                <!-- サムネイル -->
+                <div class="swiper slider-thumbnail">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/terrace1.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/terrace2.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/terrace3.jpg" alt="" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/terrace4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
         <!-- 食事エリア -->
@@ -124,6 +263,9 @@
         </p>
         <small>© 2025 sae miyauchi All rights reserved</small>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-config.js"></script>
 </body>
 
 </html>

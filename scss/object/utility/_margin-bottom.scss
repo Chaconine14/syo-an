@@ -1,0 +1,13 @@
+@use "../../foundation/variables";
+
+.u-margin-bottom {
+    margin-bottom: 30px;
+
+    @include variables.media-tb {
+        margin-bottom: 50px;
+    }
+
+    @include variables.media-pc {
+        margin-bottom: 80px;
+    }
+}

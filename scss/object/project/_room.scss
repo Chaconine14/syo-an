@@ -1,0 +1,8 @@
+@use "../../foundation/variables";
+
+.p-room {
+    background-image: url(../../../images/room_bg.jpg);
+    height: 100%;
+    padding: 20px;
+    background-size: cover;
+}

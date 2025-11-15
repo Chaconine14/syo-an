@@ -16,6 +16,7 @@
 //-------------------------------
 //Component
 //-------------------------------
+@use "object/component/title";
 
 
 
@@ -26,7 +27,10 @@
 @use "object/project/cta";
 @use "object/project/lang-btn";
 @use "object/project/concept";
+@use "object/project/swiper";
+@use "object/project/room";
 
 //-------------------------------
 //Utility
 //-------------------------------
+@use "object/utility/margin-bottom";

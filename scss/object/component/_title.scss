@@ -1,0 +1,21 @@
+@use "../../foundation/variables";
+
+.c-title {
+    @include variables.font-jp(1.6rem, 700, 3.2rem, variables.$color-darkbrown);
+    background-image: url(../../../images/title_bg_sp.svg);
+    background-size: contain;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    background-position: center;
+
+    @include variables.media-tb {
+        @include variables.font-jp(2.2rem, 400, 3.3rem, variables.$color-darkbrown);
+        margin-bottom: 45px;
+        margin-top: 30px;
+    }
+
+    @include variables.media-pc {
+        @include variables.font-jp(2.8rem, 400, 5.6rem, variables.$color-darkbrown);
+    }
+}
