@@ -80,6 +80,49 @@ main {
   }
 }
 
+.c-bg {
+  background-image: url(../../../images/room_bg.jpg);
+  height: 100%;
+  padding: 20px;
+  background-size: cover;
+}
+
+.c-text {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #3C381E;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .c-text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #3C381E;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1025px) {
+  .c-text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #3C381E;
+    max-width: 800px;
+  }
+}
+
 .p-catch {
   font-family: "Zen Old Mincho", serif;
   font-optical-sizing: auto;
@@ -475,11 +518,13 @@ main {
   }
 }
 
-.p-room {
-  background-image: url(../../../images/room_bg.jpg);
-  height: 100%;
-  padding: 20px;
-  background-size: cover;
+.p-meal_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.p-meal_item {
+  width: 100%;
 }
 
 .u-margin-bottom {

@@ -1,0 +1,11 @@
+@use "../../foundation/variables";
+
+.p-meal_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.p-meal_item {
+    width: 100%;
+}

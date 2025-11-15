@@ -1,0 +1,18 @@
+@use "../../foundation/variables";
+
+.c-text {
+    @include variables.font-jp(1.2rem, 400, 2.4rem, variables.$color-darkbrown);
+    padding: 10px;
+
+    @include variables.media-tb {
+        @include variables.font-jp(1.4rem, 400, 2.8rem, variables.$color-darkbrown);
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    @include variables.media-pc {
+        @include variables.font-jp(1.6rem, 400, 3.2rem, variables.$color-darkbrown);
+        max-width: 800px;
+    }
+
+}
