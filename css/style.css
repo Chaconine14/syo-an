@@ -86,6 +86,16 @@ main {
   padding: 20px;
   background-size: cover;
 }
+@media (min-width: 768px) {
+  .c-bg {
+    padding: 50px;
+  }
+}
+@media (min-width: 1025px) {
+  .c-bg {
+    padding: 80px;
+  }
+}
 
 .c-text {
   font-family: "Zen Old Mincho", serif;
@@ -530,11 +540,107 @@ main {
 .p-onsen_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .p-onsen_grid {
+    gap: 15px;
+  }
 }
 
 .p-onsen_item {
   width: 100%;
   height: 100%;
+}
+
+.p-kankou_img {
+  width: 100%;
+  max-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .p-kankou_img {
+    height: auto;
+    flex-grow: 2;
+    flex-basis: 0;
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+.p-kankou_figure:nth-of-type(1) .p-kankou_img {
+  -o-object-position: center 70%;
+     object-position: center 70%;
+}
+
+.p-kankou_figure {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .p-kankou_figure {
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+    max-width: none;
+    height: 600px;
+  }
+}
+
+.p-kankou_caption {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #3C381E;
+}
+@media (min-width: 768px) {
+  .p-kankou_caption {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #3C381E;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .p-kankou_caption {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #3C381E;
+  }
+}
+.p-kankou_caption h3 {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .p-kankou_caption h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-kankou_figure:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
 }
 
 .u-margin-bottom {

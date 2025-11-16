@@ -5,4 +5,12 @@
     height: 100%;
     padding: 20px;
     background-size: cover;
+
+    @include variables.media-tb {
+        padding: 50px;
+    }
+
+    @include variables.media-pc {
+        padding: 80px;
+    }
 }
