@@ -40,6 +40,65 @@ main {
   }
 }
 
+.l-footer {
+  background-image: url(../../images/footer_bg.jpg);
+  height: 100%;
+  padding: 20px;
+  background-size: cover;
+  height: 140px;
+}
+.l-footer small {
+  display: grid;
+  place-items: end center;
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #FFF;
+}
+
+.l-footer__wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.l-footer__text {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #FFF;
+}
+@media (min-width: 768px) {
+  .l-footer__text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #FFF;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1025px) {
+  .l-footer__text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #FFF;
+    max-width: 800px;
+  }
+}
+
 .c-title {
   font-family: "Zen Old Mincho", serif;
   font-optical-sizing: auto;
@@ -640,6 +699,46 @@ main {
 @media (min-width: 768px) {
   .p-kankou_figure:nth-of-type(2) {
     flex-direction: row-reverse;
+  }
+}
+
+.p-access li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.l-footer__text {
+  font-family: "Zen Old Mincho", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #FFF;
+}
+@media (min-width: 768px) {
+  .l-footer__text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #FFF;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+@media (min-width: 1025px) {
+  .l-footer__text {
+    font-family: "Zen Old Mincho", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: #FFF;
+    max-width: 800px;
   }
 }
 

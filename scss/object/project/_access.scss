@@ -1,23 +1,10 @@
-@use "../foundation/variables";
+@use "../../foundation/variables";
 
-.l-footer {
-    background-image: url(../../images/footer_bg.jpg);
-    height: 100%;
-    padding: 20px;
-    background-size: cover;
-    height: 140px;
-
-    small {
-        display: grid;
-        place-items: end center;
-        @include variables.font-jp(1.0rem, 400, 2.0rem, variables.$color-white);
+.p-access {
+    li {
+        list-style: disc;
+        margin-left: 20px;
     }
-}
-
-.l-footer__wrap {
-    display: flex;
-    gap: 20px;
-
 }
 
 
