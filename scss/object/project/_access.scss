@@ -6,20 +6,3 @@
         margin-left: 20px;
     }
 }
-
-
-.l-footer__text {
-    @include variables.font-jp(1.2rem, 400, 2.4rem, variables.$color-white);
-
-    @include variables.media-tb {
-        @include variables.font-jp(1.4rem, 400, 2.8rem, variables.$color-white);
-        margin: 0 auto;
-        max-width: 600px;
-    }
-
-    @include variables.media-pc {
-        @include variables.font-jp(1.6rem, 400, 3.2rem, variables.$color-white);
-        max-width: 800px;
-    }
-
-}
