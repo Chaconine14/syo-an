@@ -6,7 +6,6 @@
     padding: 20px;
     background-size: cover;
     height: 160px;
-
     display: grid;
     align-items: end;
     justify-items: center;
@@ -37,7 +36,6 @@
             margin-right: 40px;
         }
     }
-
 }
 
 
@@ -53,5 +51,4 @@
         @include variables.font-jp(1.6rem, 400, 3.2rem, variables.$color-white);
         max-width: 800px;
     }
-
 }

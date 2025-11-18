@@ -1,7 +1,5 @@
 @use "../../foundation/variables";
 
-
-
 .p-kankou_img {
     width: 100%;
     max-width: 400px;
@@ -10,12 +8,10 @@
     @include variables.media-tb {
         height: auto;
         flex-grow: 2;
-        flex-basis: 0; // ★これが大事！
-        max-width: none; // ★これも大事！
-        min-width: 0; // ← これがないと flex が効かない！
-
+        flex-basis: 0;
+        max-width: none;
+        min-width: 0;
     }
-
 }
 
 .p-kankou_figure:nth-of-type(1) .p-kankou_img {
@@ -30,12 +26,10 @@
 
     @include variables.media-tb {
         flex-direction: row;
-        align-items: stretch; // 高さを揃える
+        align-items: stretch;
         width: 100%;
-        max-width: none; // ★これも大事！
+        max-width: none;
         height: 600px;
-
-
     }
 }
 
@@ -47,8 +41,8 @@
     @include variables.media-tb {
         @include variables.font-jp(1.4rem, 400, 2.8rem, variables.$color-darkbrown);
         flex-grow: 1;
-        flex-basis: 0; // ★これも同じ！
-        min-width: 0; // ← これがないと flex が効かない！
+        flex-basis: 0;
+        min-width: 0;
     }
 
     @include variables.media-pc {
