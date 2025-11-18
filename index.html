@@ -26,15 +26,38 @@
 
         <!-- メインビジュアル -->
         <section class="l-main-visual">
-            <button class="p-lang-btn">
+            <!-- 言語切り替えスイッチ -->
+            <button class="p-lang-btn js-lang-btn">
                 <span style="text-decoration: underline;">JP</span>
                 <span> | </span>
                 <span>EN</span>
             </button>
             <h1 class="p-catch">
                 <span data-lang="ja">暮らすように泊まる、 <br>新しい隠れ宿</span>
-                <span data-lang="en" style="display:none;">Stay like a local <br>— your hidden home in Nozawa.</span>
+                <span data-lang="en" style="display:none;">Stay like a local —<br> your hidden home in Nozawa.</span>
             </h1>
+
+
+            <!-- メインビジュアルスライダー -->
+            <div class="mv-swiper js-mv-swiper">
+                <!-- スライドを包むラッパ -->
+                <div class="swiper-wrapper">
+
+                    <!-- 各スライド -->
+                    <div class="swiper-slide">
+                        <img src="./images/main-visual_pc.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/snow-road.jpg" alt="">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
             <img src="./images/logo.svg" alt="コンドミニアム「松庵」のロゴ" class="p-catch__logo">
         </section>
 
@@ -77,7 +100,10 @@
 
         <!-- 客室エリア -->
         <section class="c-bg">
-            <h2 class="c-title">客室</h2>
+            <h2 class="c-title">
+                <span data-lang="ja">客室</span>
+                <span data-lang="en" style="display:none;">Rooms</span>
+            </h2>
 
             <!-- スライダー① -->
             <div class="p-swiper-wrap u-margin-bottom">
@@ -103,7 +129,12 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <!-- キャプション -->
-                <p class="p-swiper__text">家族それぞれの時間を尊重する、3つの寝室。<br>洋室2・和室1（最大6名まで）</p>
+                <p class="p-swiper__text">
+                    <span data-lang="ja">家族それぞれの時間を尊重する、3つの寝室。<br>洋室2・和室1（最大6名まで）</span>
+                    <span data-lang="en" style="display:none;">Three bedrooms that respect each family member’s
+                        privacy.<br>
+                        Two Western-style rooms and one Japanese-style room (up to 6 guests).</span>
+                </p>
 
                 <!-- サムネイル -->
                 <div class="swiper slider-thumbnail">
@@ -147,7 +178,11 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <!-- キャプション -->
-                <p class="p-swiper__text">自宅のように過ごせるプライベート空間<br>キッチン・バスルーム・Wi-Fi完備</p>
+                <p class="p-swiper__text">
+                    <span data-lang="ja">自宅のように過ごせるプライベート空間<br>キッチン・バスルーム・Wi-Fi完備</span>
+                    <span data-lang="en" style="display:none;">A private space where you can feel at home.<br>
+                        Fully equipped with a kitchen, bathroom, and Wi-Fi.</span>
+                </p>
 
                 <!-- サムネイル -->
                 <div class="swiper slider-thumbnail">
@@ -193,7 +228,11 @@
                 <div class="swiper-button-prev"></div>
 
                 <!-- キャプション -->
-                <p class="p-swiper__text">テラスで過ごす贅沢なひととき<br>野沢の風を感じる、もうひとつのリビングです</p>
+                <p class="p-swiper__text">
+                    <span data-lang="ja">テラスで過ごす贅沢なひととき<br>野沢の風を感じる、もうひとつのリビングです</span>
+                    <span data-lang="en" style="display:none;">A luxurious moment on the terrace—<br>
+                        an additional living space where you can feel the breeze of Nozawa.</span>
+                </p>
 
                 <!-- サムネイル -->
                 <div class="swiper slider-thumbnail">
@@ -219,10 +258,20 @@
 
         <!-- 食事エリア -->
         <section class="c-bg">
-            <h2 class="c-title">食事</h2>
-            <p class="c-text u-margin-bottom">当宿は素泊まり専用のスタイル。 <br>
-                野沢温泉街には、地元の食材を使った食堂や居酒屋、 ベーカリーなど 多彩な飲食店が立ち並びます。 <br>
-                その日の気分で選ぶ“ごはん時間”も、旅の思い出のひとつに。
+            <h2 class="c-title">
+                <span data-lang="ja">食事</span>
+                <span data-lang="en" style="display:none;">Dining<br>Style</span>
+            </h2>
+            <p class="c-text u-margin-bottom">
+                <span data-lang="ja">当宿は素泊まり専用のスタイル。 <br>
+                    野沢温泉街には、地元の食材を使った食堂や居酒屋、 ベーカリーなど 多彩な飲食店が立ち並びます。 <br>
+                    その日の気分で選ぶ“ごはん時間”も、旅の思い出のひとつに。
+                </span>
+                <span data-lang="en" style="display:none;">Our accommodation offers a room-only style.<br>
+                    The Nozawa Onsen town is filled with local eateries—diners, izakayas, bakeries, and more—serving
+                    dishes made with regional ingredients.<br>
+                    Choosing where to eat each day becomes part of the memorable journey.
+                </span>
             </p>
             <div class="p-meal_grid">
                 <img src="./images/meal1.jpg" alt="肉の写真" class="p-meal_item">
@@ -237,12 +286,23 @@
 
         <!-- 湯めぐりエリア -->
         <section class="c-bg">
-            <h2 class="c-title">湯めぐり</h2>
+            <h2 class="c-title">
+                <span data-lang="ja">湯めぐり</span>
+                <span data-lang="en" style="display:none;">Hot Spring<br>Hopping</span>
+            </h2>
             <p class="c-text u-margin-bottom">
-                村に息づく、十三の外湯。<br>
-                野沢温泉には、地元の人々に守られてきた 13ヶ所の共同浴場があります。<br>
-                宿から歩いて行ける距離に点在しており、 それぞれ湯の温度も、雰囲気も異なります。<br>
-                ご家族ご友人と、タオルを片手にのんびり“湯めぐり”をどうぞ。
+                <span data-lang="ja">
+                    村に息づく、十三の外湯。<br>
+                    野沢温泉には、地元の人々に守られてきた 13ヶ所の共同浴場があります。<br>
+                    宿から歩いて行ける距離に点在しており、 それぞれ湯の温度も、雰囲気も異なります。<br>
+                    ご家族ご友人と、タオルを片手にのんびり“湯めぐり”をどうぞ。
+                </span>
+                <span data-lang="en" style="display:none;">
+                    Nozawa Onsen is home to thirteen traditional public baths cherished by the local community.<br>
+                    Each one has its own unique temperature and atmosphere, and all are within walking distance from our
+                    lodge.<br>
+                    Enjoy a relaxing hot spring hop with your family or friends, towel in hand.
+                </span>
             </p>
             <div class="p-onsen_grid">
                 <img src="./images/onsen1.jpg" alt="露天風呂の写真" class="p-onsen_item">
@@ -254,7 +314,10 @@
 
         <!-- 観光エリア -->
         <section class="c-bg p-kankou">
-            <h2 class="c-title">観光</h2>
+            <h2 class="c-title">
+                <span data-lang="ja">観光</span>
+                <span data-lang="en" style="display:none;">Activities<br>& Seasons</span>
+            </h2>
             <p class="c-text u-margin-bottom">
                 <span data-lang="ja">
                     四季折々の野沢を、家族でゆっくり体験。<br>
@@ -271,8 +334,15 @@
             <figure class="p-kankou_figure u-margin-bottom">
                 <img src="./images/kankou1.jpg" alt="リフトから見た冬のスキー場" class="p-kankou_img" />
                 <figcaption class="p-kankou_caption">
-                    <h3>極上のパウダースノー</h3>
-                    <p>野沢温泉スキー場までは車で5分。 無料シャトルで気軽にアクセスでき、 キッズスクールやファミリー向けゲレンデも充実。
+                    <h3>
+                        <span data-lang="ja">極上のパウダースノー</span>
+                        <span data-lang="en" style="display:none;">Exceptional Powder Snow</span>
+                    </h3>
+                    <p>
+                        <span data-lang="ja">野沢温泉スキー場までは車で5分。 無料シャトルで気軽にアクセスでき、 キッズスクールやファミリー向けゲレンデも充実。</span>
+                        <span data-lang="en" style="display:none;">The Nozawa Onsen Ski Resort is just a 5-minute drive
+                            away. You can easily reach it via a free shuttle, and it offers excellent facilities
+                            including kids’ ski schools and family-friendly slopes.</span>
                     </p>
                 </figcaption>
             </figure>
@@ -280,8 +350,15 @@
             <figure class="p-kankou_figure u-margin-bottom">
                 <img src="./images/kankou2.jpg" alt="夏の山の写真" class="p-kankou_img" />
                 <figcaption class="p-kankou_caption">
-                    <h3>山の空気を全身で涼しむ</h3>
-                    <p>グリーンシーズンはトレッキングやサイクリング、 夏祭りや朝市など、村の暮らしを体験できるイベントが豊富です。
+                    <h3>
+                        <span data-lang="ja">山の空気を全身で涼しむ</span>
+                        <span data-lang="en" style="display:none;">Breathe in the Mountain Air</span>
+                    </h3>
+                    <p>
+                        <span data-lang="ja">グリーンシーズンはトレッキングやサイクリング、 夏祭りや朝市など、村の暮らしを体験できるイベントが豊富です。</span>
+                        <span data-lang="en" style="display:none;">During the green season, enjoy trekking, cycling, and
+                            a variety of local events such as summer festivals and morning markets that let you
+                            experience village life firsthand.</span>
                     </p>
                 </figcaption>
             </figure>
@@ -289,12 +366,29 @@
 
         <!-- アクセスエリア -->
         <section class="c-bg p-access">
-            <h2 class="c-title">アクセス</h2>
-            <p class="c-text"> 長野県下高井郡野沢温泉村○○地区</p>
+            <h2 class="c-title">
+                <span data-lang="ja">アクセス</span>
+                <span data-lang="en" style="display:none;">Access</span>
+            </h2>
+            <p class="c-text">
+                <span data-lang="ja">長野県下高井郡野沢温泉村○○地区</span>
+                <span data-lang="en" style="display:none;">Nozawa Onsen Village, ○○ District, Shimotakai-gun, Nagano
+                    Prefecture</span>
+            </p>
             <ul class="c-text u-margin-bottom">
-                <li>JR飯山駅から車で25分</li>
-                <li>長野駅から高速バスで約75分</li>
-                <li>駐車場完備（無料）</li>
+                <li>
+                    <span data-lang="ja">JR飯山駅から車で25分</span>
+                    <span data-lang="en" style="display:none;">25 minutes by car from JR Iiyama Station</span>
+                </li>
+                <li>
+                    <span data-lang="ja">長野駅から高速バスで約75分</span>
+                    <span data-lang="en" style="display:none;">About 75 minutes by express bus from Nagano
+                        Station</span>
+                </li>
+                <li>
+                    <span data-lang="ja">駐車場完備（無料）</span>
+                    <span data-lang="en" style="display:none;">Free parking available</span>
+                </li>
             </ul>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102054.75970730933!2d138.38729840576437!3d36.93311909014753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff6051adbc9612b%3A0x1891db5a466e8530!2z6ZW36YeO55yM5LiL6auY5LqV6YOh6YeO5rKi5rip5rOJ5p2R!5e0!3m2!1sja!2sjp!4v1763262634357!5m2!1sja!2sjp"
@@ -305,8 +399,14 @@
     <footer class="l-footer">
         <div class="l-footer__wrap">
             <img src="./images/logo.svg" alt="コンドミニアム「松庵」のロゴ">
-            <p class="l-footer__text">0000-00-0000<br>
-                長野県下高井郡野沢温泉村○○地区
+            <p class="l-footer__text">
+                <span data-lang="ja">0000-00-0000<br>
+                    長野県下高井郡野沢温泉村○○地区
+                </span>
+                <span data-lang="en" style="display:none;">0000-00-0000<br>
+                    Nozawa Onsen Village, ○○ District, Shimotakai-gun, Nagano
+                    Prefecture
+                </span>
             </p>
         </div>
         <small>© 2025 sae miyauchi All rights reserved</small>
@@ -314,6 +414,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/swiper-config.js"></script>
+    <script src="./js/lang-switch.js"></script>
 </body>
 
 </html>

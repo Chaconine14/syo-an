@@ -3,11 +3,8 @@
 .p-onsen_grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
 
-    @include variables.media-tb {
-        gap: 15px;
-    }
+
 }
 
 .p-onsen_item {

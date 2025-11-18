@@ -22,3 +22,25 @@ document.querySelectorAll('.p-swiper-wrap').forEach((wrap) => {
     });
 
 });
+
+
+//===============================
+//メインビジュアルスワイパー
+//===============================
+
+
+const mvSwiper = new Swiper('.js-mv-swiper', {
+    loop: true,
+    effect: 'fade', // フェードでふわっと切り替え
+    autoplay: {
+        delay: 4000, // ちょっと余韻を持たせる
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});

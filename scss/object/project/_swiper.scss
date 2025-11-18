@@ -92,3 +92,36 @@
 
     }
 }
+
+//===============================
+//メインビジュアルスワイパー
+//===============================
+
+.mv-swiper {
+    width: auto;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+
+    .swiper-slide img {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+
+        object-position: 60% 60%;
+
+        transform: scale(1);
+        /* 初期状態 */
+        transition: transform 14s ease;
+        /* ゆっくり */
+
+    }
+}
+
+
+.mv-swiper {
+    .swiper-slide-active img {
+        transform: scale(1.08);
+        /* ほんの少し拡大 */
+    }
+}
