@@ -33,7 +33,7 @@ const mvSwiper = new Swiper('.js-mv-swiper', {
     loop: true,
     effect: 'fade', // フェードでふわっと切り替え
     autoplay: {
-        delay: 4000, // ちょっと余韻を持たせる
+        delay: 3000, // ちょっと余韻を持たせる
     },
     pagination: {
         el: '.swiper-pagination',
